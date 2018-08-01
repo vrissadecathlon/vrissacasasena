@@ -1,0 +1,319 @@
+.slider {
+  margin: 0 auto;
+  height:700px;
+  max-width: 100%;
+ background:#00789B;
+
+    
+}
+
+.slide_viewer {
+    background:#00789B;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide_group {
+    background:#00789B;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+    background:#00789B;
+	display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+    
+}
+
+.textoslide {
+	z-index: 9998;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 150px;
+	background: linear-gradient(to right, rgba(67, 120, 153,.76), rgba(214, 137, 51,.76));
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background-image: url(../img/slide1.png);
+	background-size: cover;
+	background-position:bottom;
+}
+
+.slide:nth-of-type(2) {
+	background-image: url(../img/slide1.png);
+	background-size: cover;
+	background-position: bottom;
+
+}
+
+.slide:nth-of-type(3) {
+	background-image: url(../img/slide1.png);
+	background-size: cover;
+	background-position: bottom;
+}
+
+
+
+
+
+.slide_buttons {
+  bottom:80px;
+  left: 0;
+  position:relative;
+  right: 0;
+  text-align: center;
+  z-index:100;
+}
+
+a.slide_btn {
+  color: rgb(255, 163, 0,.5);
+  font-size: 60px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+  color: rgb(255, 163, 0,1);
+  cursor: pointer;
+}
+
+.directional_nav {
+	
+  height: 340px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: -600px;
+}
+
+.previous_btn {
+
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.previous_btn, .next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+ 
+}
+
+.previous_btn:hover, .next_btn:hover {
+  opacity: 1;
+}
+
+.textoslide h1 {
+	font-family: 'Myriad Pro';
+	color: rgba(255, 163, 0,1);
+	font-size: 50px;
+	padding: 40px 20px 20px 20px;
+}
+
+.textoslide p{
+	text-align: center;
+	font-family: 'Myriad Pro';
+	font-size: 20px;
+	padding: 0 45px;
+	color: white;
+}
+
+.textoslide a {
+	transition: .3s;
+	padding: 20px;
+	background-color:rgba(255, 163, 0,1);
+	font-family: 'Myriad Pro';
+	margin: 40px 0 40px 0;
+	text-decoration: none;
+	color: white;
+
+	font-size: 20px;
+	
+}
+
+
+.textoslide a:hover {
+  background: #00789B;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .slider {
+  	height: 550px;
+  	max-width: 100%;
+	}
+	
+	
+.textoslide {
+	width: 100%;
+	max-width: 520px;
+	z-index: 9998;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 150px;
+	background: linear-gradient(to right,rgba(214, 137, 51,.76), rgba(67, 120, 153,.76));
+	position: absolute;
+	top: 25%;
+	transform: translateY(-50%);
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+	
+	
+	
+.textoslide h1 {
+	font-family: 'Myriad Pro';
+	color: rgb(255, 163, 0,1);
+	font-size: 40px;
+	padding: 40px 20px 5px 20px;
+}
+
+.textoslide p{
+	text-align: center;
+	font-family: 'Myriad Pro';
+	font-size: 20px;
+	padding: 0 45px;
+	color: white;
+}
+
+.textoslide a {
+	transition: .3s;
+	padding: 20px;
+	background-color:rgb(255, 163, 0,1);
+	font-family: 'Myriad Pro';
+	margin: 20px 0 20px 0;
+	text-decoration: none;
+	color: white;
+
+	font-size: 20px;
+	
+}
+
+
+.textoslide a:hover {
+  background: #00789B;
+	color: white;
+}
+
+	
+.directional_nav {
+	
+  height: 340px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  top: -550px;
+}
+
+
+
+
+	
+}
+
+
+
+
+
+@media only screen and (max-width: 716px) {
+  .previous_btn {
+      display: none;
+    left: 0;
+  }
+  .next_btn {
+    right:0;
+      display: none;
+  }
+    
+    .slider {
+    height: 380px;
+    
+}
+    
+    .textoslide {
+	width: 90%;
+	max-width: 400px;
+        z-index: 9997;
+	
+}
+	
+	
+	
+.textoslide h1 {
+	font-family: 'Myriad Pro';
+	color: rgb(255, 163, 0,1);
+	font-size: 25px;
+	padding: 40px 10px 5px 10px;
+}
+
+.textoslide p{
+	text-align: center;
+	font-family: 'Myriad Pro';
+	font-size: 13px;
+	padding: 0 20px;
+	color: white;
+}
+
+.textoslide a {
+	transition: .3s;
+	padding: 10px;
+	margin: 10px 0 20px 0;
+	font-size: 15px;
+	
+}
+
+
+    
+    
+}

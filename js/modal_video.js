@@ -1,0 +1,9 @@
+$(function(){
+    $('#modal').hide();
+    $('.boton_m').click(function(){
+        $('#modal').fadeIn();
+    });
+    $('.cerrar').click(function(){
+       $('#modal').fadeOut(); 
+    });
+});
